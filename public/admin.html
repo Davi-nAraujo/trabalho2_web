@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administração - Poções e Soluções</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Administração</h1>
+      <nav>
+        <a href="index.html">Voltar para a loja</a>
+      </nav>
+    </header>
+
+    <section>
+      <div class="admin">
+        <form id="form-pocao">
+          <h2>Cadastrar poção</h2>
+          <label>Nome</label>
+          <input type="text" name="nome" required />
+          <label>Descrição</label>
+          <textarea name="descricao" rows="3" required></textarea>
+          <label>Imagem (URL)</label>
+          <input type="text" name="imagem" required />
+          <label>Preço</label>
+          <input type="number" name="preco" required />
+          <button type="submit">Cadastrar</button>
+        </form>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Imagem</th>
+              <th>Nome</th>
+              <th>Descrição</th>
+              <th>Preço</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tabela-pocoes"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>
